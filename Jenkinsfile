@@ -24,7 +24,7 @@ tools{
 		stage ("package"){
 			steps{
 			sh 'mvn package'
-				echo "job is done"
+				
              }
         }
     }
