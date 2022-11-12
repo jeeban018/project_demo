@@ -24,7 +24,7 @@ tools{
 		stage ("package"){
 			steps{
 			sh 'mvn package'
-			echo "jeevan"
+			echo "jeevan world"
              }
         }
     }
