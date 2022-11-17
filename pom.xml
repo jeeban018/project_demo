@@ -25,6 +25,11 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>cobertura</artifactId>
+    <version>1.17</version>
+</dependency>
   </dependencies>
 
   <build>
@@ -69,6 +74,17 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+		<groupId>org.codehaus.mojo</groupId>
+		<artifactId>cobertura-maven-plugin</artifactId>
+		<version>2.6</version>
+		<configuration>
+			<formats>
+				<format>html</format>
+				<format>xml</format>
+			</formats>
+		</configuration>
+	</plugin>
       </plugins>
     </pluginManagement>
   </build>
